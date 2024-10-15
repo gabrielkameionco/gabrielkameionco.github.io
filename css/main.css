@@ -796,15 +796,14 @@ input[type="button"] {
     line-height: calc(5.4rem - .4rem);
     padding: 0 3rem;
     margin: 0 .3rem 1.2rem 0;
-    color: #000000;
     text-decoration: none;
     text-align: center;
     white-space: nowrap;
     cursor: pointer;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
-    background-color: #c5c5c5;
-    border: .2rem solid #c5c5c5;
+    background-color: #2ca294;
+    border: .2rem solid #2ca294;
 }
 
 .btn:hover,
@@ -817,9 +816,9 @@ button:focus,
 input[type="submit"]:focus,
 input[type="reset"]:focus,
 input[type="button"]:focus {
-    background-color: #b8b8b8;
-    border-color: #b8b8b8;
-    color: #000000;
+    background-color: #87E4DB;
+    border-color: #87E4DB;
+    color: black;
     outline: 0;
 }
 
@@ -1465,6 +1464,9 @@ button::-moz-focus-inner, input::-moz-focus-inner {
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
 }
+.header-logo a img {
+    border-radius: 20px;
+}
 
 
 /* ------------------------------------------------------------------- 
@@ -1784,8 +1786,8 @@ button::-moz-focus-inner, input::-moz-focus-inner {
     display: table-cell;
     width: 100%;
     height: 100%;
-    vertical-align: middle;
-    padding-bottom: 15.6rem;
+    vertical-align: bottom;
+    padding-bottom: 0px;
     position: relative;
     overflow: hidden;
 }
@@ -1824,14 +1826,10 @@ button::-moz-focus-inner, input::-moz-focus-inner {
     width: 215px;
     border-color: #FFFFFF;
     color: #FFFFFF;
-    margin: 1.5rem 1.5rem 0 0;
+    margin: 1.5rem;
     letter-spacing: .25rem;
     -webkit-transition: all 0.5s ease-in-out;
     transition: all 0.5s ease-in-out;
-}
-
-.home-content__buttons .btn:last-child {
-    margin-right: 0;
 }
 
 .home-content__buttons .btn:hover, 
@@ -2079,8 +2077,10 @@ html.no-csstransitions .home-content__main {
     }
     .home-content__main {
         padding-top: 21rem;
-        padding-right: 80px;
         max-width: 680px;
+    }
+    .home-content__buttons {
+        padding-top: 3rem;
     }
 }
 
@@ -2107,8 +2107,6 @@ html.no-csstransitions .home-content__main {
     }
     .home-content__buttons .btn {
         display: block;
-        width: 70%;
-        margin: 1.5rem 0 0 0;
     }
     .home-social {
         right: 4rem;
@@ -2160,12 +2158,8 @@ html.no-csstransitions .home-content__main {
         padding-right: 25px;
         width: 85%;
     }
-    .home-content__buttons {
-        padding-top: 1.2rem;
-    }
     .home-content__buttons .btn {
         width: auto;
-        margin: 1.5rem 0 0 0;
     }
     .home-social {
         display: none;
@@ -2787,7 +2781,10 @@ html.no-csstransitions .home-content__main {
 }
 
 .clients-testimonials .testimonials {
-    margin: 0 10%;
+    margin: 0 4%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
 .clients-testimonials .testimonials p {
@@ -2796,10 +2793,11 @@ html.no-csstransitions .home-content__main {
     line-height: 1.8;
     color: #555555;
     margin-bottom: 6rem;
+    text-align: justify;
 }
 
 .clients-testimonials .testimonials__slide {
-    padding: 0 0 3rem 0;
+    padding: 0 1rem 3rem 1rem;
 }
 
 .clients-testimonials .testimonials__avatar {
@@ -2825,12 +2823,9 @@ html.no-csstransitions .home-content__main {
 }
 
 .clients-testimonials .testimonials .slick-arrow {
-    position: absolute;
-    top: 7.2rem;
     width: 66px;
     height: 66px;
     margin: 0;
-    padding: 0;
     background-color: transparent;
     background-repeat: no-repeat;
     background-size: 22px 15px;
@@ -2866,7 +2861,7 @@ html.no-csstransitions .home-content__main {
  * ------------------------------------------------------------------- */
 @media only screen and (max-width: 1200px) {
     .clients-testimonials .testimonials {
-        margin: 0 12%;
+        margin: 0 2%;
     }
     .clients-testimonials .testimonials p {
         font-size: 2.6rem;
@@ -2933,7 +2928,7 @@ html.no-csstransitions .home-content__main {
  * ------------------------------------------------------------------- */
 .s-contact {
     background-color: #151515;
-    background-image: url("../images/background/contact-bg.jpg");
+    background-image: url("../images/background/dna.jpg");
     background-repeat: no-repeat;
     background-position: center, center;
     padding-top: 15rem;
@@ -3121,7 +3116,7 @@ html.no-csstransitions .home-content__main {
 .contact-social {
     list-style: none;
     display: inline-block;
-    margin: 0;
+    margin: 0 1rem 0 0;
     font-size: 2rem;
 }
 
@@ -3265,16 +3260,7 @@ html.no-csstransitions .home-content__main {
  * responsive:
  * contact
  * ------------------------------------------------------------------- */
-@media only screen and (max-width: 1200px) {
-    .contact-content {
-        max-width: 900px;
-    }
-}
-
 @media only screen and (max-width: 1000px) {
-    .contact-content {
-        max-width: 700px;
-    }
     .contact-primary, .contact-secondary {
         float: none;
         width: 100%;

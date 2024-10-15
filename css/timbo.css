@@ -36,3 +36,19 @@
 .timbo-overlay-brick .timbo-overlay-text {
     color: white;
 }
+
+.main-flex {
+    display: flex;
+    flex-direction: row;
+}
+
+@media only screen and (max-width: 1200px) {
+    .main-flex {
+        flex-direction: column;
+    }
+}
+
+.row .home-picture {
+    align-self: center;
+    max-width: 400px;
+}
