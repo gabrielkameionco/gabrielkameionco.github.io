@@ -2809,6 +2809,7 @@ html.no-csstransitions .home-content__main {
     border:#2ca294 solid 2px;
     border-radius: 20px;
     overflow: hidden;
+    background-color: #050505;
 }
 
 .clients-testimonials .testimonials__slide .video-text {
