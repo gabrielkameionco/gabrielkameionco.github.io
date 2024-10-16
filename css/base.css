@@ -435,14 +435,11 @@ textarea {
  *
  * ------------------------------------------------------------------- */
 .row {
-    width: 98%;
+    width: 94%;
     max-width: 2000px;
     margin: 0 auto;
     padding-left: 10px;
     padding-right: 10px;
-}
-.home-content .row {
-    width: 94%;
 }
 
 .row:after {
