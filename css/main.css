@@ -804,6 +804,7 @@ input[type="button"] {
     transition: all 0.3s ease-in-out;
     background-color: #2ca294;
     border: .2rem solid #2ca294;
+    color: black;
 }
 
 .btn:hover,
