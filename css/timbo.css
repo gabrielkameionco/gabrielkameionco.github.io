@@ -6,13 +6,29 @@
     width: 100%;
 }
 
-.main-flex {
+.justify-center {
+    justify-content: center;
+}
+
+.flex-row,
+.flex-row-xl
+ {
     display: flex;
     flex-direction: row;
 }
 
+.flex-shrink2 {
+    display: flex;
+    flex-shrink: 2;
+}
+
+.flex-grow3 {
+    display: flex;
+    flex-grow: 3;
+}
+
 @media only screen and (max-width: 1200px) {
-    .main-flex {
+    .flex-row-xl {
         flex-direction: column;
     }
 }
@@ -20,4 +36,10 @@
 .row .home-picture {
     align-self: center;
     max-width: 400px;
+}
+
+@media only screen and (max-width: 1200px) {
+    .xl {
+        display: none;
+    }
 }

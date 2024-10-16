@@ -2780,7 +2780,7 @@ html.no-csstransitions .home-content__main {
 }
 
 .clients-testimonials .testimonials {
-    margin: 0 4%;
+    margin: 0;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -2798,6 +2798,22 @@ html.no-csstransitions .home-content__main {
 .clients-testimonials .testimonials__slide {
     padding: 0 1rem 3rem 1rem;
 }
+
+.clients-testimonials .testimonials__slide .testimonials__video {
+    max-width: 540px;
+    min-width: 200px;
+    align-self: flex-start;
+}
+.clients-testimonials .testimonials__slide .testimonials__video video {
+    border:#2ca294 solid 2px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.clients-testimonials .testimonials__slide .video-text {
+    margin-left: 2rem;
+}
+
 
 .clients-testimonials .testimonials__avatar {
     height: 8.4rem;
