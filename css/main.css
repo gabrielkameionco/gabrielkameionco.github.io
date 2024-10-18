@@ -2805,12 +2805,6 @@ html.no-csstransitions .home-content__main {
     min-width: 200px;
     align-self: flex-start;
 }
-.clients-testimonials .testimonials__slide .testimonials__video video {
-    border:#2ca294 solid 2px;
-    border-radius: 20px;
-    overflow: hidden;
-    background-color: #050505;
-}
 
 .clients-testimonials .testimonials__slide .video-text {
     margin-left: 2rem;
@@ -3012,7 +3006,7 @@ html.no-csstransitions .home-content__main {
 }
 
 .contact-content {
-    max-width: 1000px;
+    max-width: 2000px;
     background-color: rgba(0, 0, 0, 0.2);
     color: rgba(255, 255, 255, 0.4);
     padding-top: 6rem;
@@ -3101,6 +3095,10 @@ html.no-csstransitions .home-content__main {
 
 .contact-primary {
     width: 65%;
+    height: 75vh;
+}
+.contact-primary .map {
+    height: 100%;
 }
 
 .contact-primary #contactForm {
@@ -3278,13 +3276,12 @@ html.no-csstransitions .home-content__main {
  * contact
  * ------------------------------------------------------------------- */
 @media only screen and (max-width: 1000px) {
-    .contact-primary, .contact-secondary {
+    .contact-primary {
+        display: none;
+    }
+    .contact-secondary {
         float: none;
         width: 100%;
-    }
-    .contact-primary #contactForm {
-        margin-top: -1.5rem;
-        margin-bottom: 7.2rem;
     }
     .contact-secondary .hide-on-fullwidth {
         display: none;

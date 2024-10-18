@@ -33,6 +33,14 @@
     }
 }
 
+.media-card {
+    width: 100%;
+    border:#2ca294 solid 2px;
+    border-radius: 20px;
+    overflow: hidden;
+    background-color: #050505;
+}
+
 .row .home-picture {
     align-self: center;
     max-width: 400px;
