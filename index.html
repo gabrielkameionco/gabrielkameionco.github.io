@@ -1,382 +1,1225 @@
 <!DOCTYPE html>
-<!--[if lt IE 9 ]><html class="no-js oldie" lang="en"> <![endif]-->
-<!--[if IE 9 ]><html class="no-js oldie ie9" lang="en"> <![endif]-->
-<!--[if (gte IE 9)|!(IE)]><!-->
-<html class="no-js" lang="en">
-<!--<![endif]-->
-
+<html lang="pt-BR">
 <head>
+  <meta charset="UTF-8" />
+  <!-- Google Tag Manager — carregamento condicionado ao consentimento (LGPD) -->
+  <!-- O container só é injetado pela função gtmLoad(), chamada após consentimento do usuário. -->
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtagConsentDefault() {
+      window.dataLayer.push({
+        'event': 'default_consent',
+        'analytics_storage': 'denied',
+        'ad_storage': 'denied',
+        'ad_user_data': 'denied',
+        'ad_personalization': 'denied'
+      });
+    }
+    gtagConsentDefault();
 
-    <!--- basic page needs
-    ================================================== -->
-    <meta charset="utf-8">
-    <title>Gabriel Kamei - Oncologista clínico</title>
-    <!-- SEO -->
-    <meta name="description" content="Especialista em tratamento de tumores sólidos de órgãos como mama, prostáta, intestino, pulmão, estômago, sistema nervoso central.">
-    <meta name="keywords" content="Gabriel Kamei, Oncologista, oncologia clinica, imunoterapia, hormonoterapia, tratamento cancer, Manaus, Amazonas">
-    <meta name="author" content="Gabriel Kamei">
+    function gtmLoad() {
+      if (window.__gtmLoaded) return;
+      window.__gtmLoaded = true;
+      (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+      'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+      })(window,document,'script','dataLayer','GTM-TZPXJ5C2');
+    }
+  </script>
+  <!-- End Google Tag Manager -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dr. Gabriel Kamei — MÉDICO · Oncologia Clínica em Manaus</title>
+  <meta name="description" content="Dr. Gabriel Kamei, MÉDICO CRM-AM 13.068, atua em Oncologia Clínica. Formação pelo Hospital de Amor de Barretos. Atendimento em Manaus pelo grupo Oncoclínicas®." />
+  <meta property="og:title" content="Dr. Gabriel Kamei — MÉDICO · Oncologia Clínica em Manaus" />
+  <meta property="og:description" content="Você recebeu um diagnóstico difícil. O próximo passo começa aqui. Agende sua consulta pelo WhatsApp." />
+  <meta property="og:image" content="https://gabrielkameionco.github.io/images/oncologia-sensumed.jpg" />
+  <meta property="og:type" content="website" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
-    <!-- Rich Preview 
-    ================================================== -->
-    <meta property="og:title" content="Gabriel Kamei">
-    <meta property="og:type" content="website">
-    <meta property="og:description" content="Tratamento de câncer em Manaus.">
-    <meta property="og:image"            itemprop="image" content="https://gabrielkameionco.github.io/images/oncologia-sensumed.jpg">
-    <meta property="og:image:secure_url" itemprop="image" content="https://gabrielkameionco.github.io/images/oncologia-sensumed.jpg">
-    <link itemprop="thumbnailUrl" href="https://gabrielkameionco.github.io/images/oncologia-sensumed.jpg">
+    :root {
+      --ink:       #0D1117;
+      --ink-soft:  #2C3340;
+      --slate:     #4A5568;
+      --line:      #E2E8F0;
+      --cream:     #F8F6F2;
+      --white:     #FFFFFF;
+      --teal:      #0A7C6B;
+      --teal-dark: #065A4D;
+      --teal-pale: #E6F4F1;
+      --wa-green:  #25D366;
+      --wa-dark:   #1DAE54;
+      --r:         0.75rem;
+    }
 
-    <!-- mobile specific metas
-    ================================================== -->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- CSS
-    ================================================== -->
-    <link rel="stylesheet" href="css/base.css">
-    <link rel="stylesheet" href="css/vendor.css">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/timbo.css">
+    html { scroll-behavior: smooth; }
 
-    <!-- Font Awesome 5.5.0 -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    body {
+      font-family: 'Inter', sans-serif;
+      color: var(--ink);
+      background: var(--white);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
 
-    <!-- script
-    ================================================== -->
-    <script src="js/modernizr.js"></script>
-    <script src="js/pace.min.js"></script>
+    h1, h2, h3 { font-family: 'Playfair Display', serif; line-height: 1.15; }
+    img { max-width: 100%; display: block; }
 
-    <!-- favicons
-    ================================================== -->
-    <link rel="icon" type="image/x-icon" href="images/oncologia-sensumed-logo.ico"     sizes="64x64 100x100">
-    <link rel="icon" type="image/png"    href="images/oncologia-sensumed-logo-100.png" sizes="100x100">
+    /* ── UTILITY ── */
+    /* FIX 1: padding lateral aumentado de 1.5rem para 2.5rem em mobile e 3rem em desktop */
+    .container { max-width: 1120px; margin: 0 auto; padding: 0 3rem; }
 
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-16724608901">
-    </script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
+    .eyebrow {
+      font-size: 0.72rem;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--teal);
+      margin-bottom: 0.75rem;
+    }
 
-        gtag('config', 'AW-16724608901');
-    </script>
+    /* ── WA ICON SVG shared ── */
+    .wa-svg { flex-shrink: 0; }
+
+    /* ── WA BUTTON ── */
+    .btn-wa {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.6rem;
+      background: var(--wa-green);
+      color: #fff;
+      font-family: 'Inter', sans-serif;
+      font-size: 1rem;
+      font-weight: 600;
+      padding: 0.9rem 1.75rem;
+      border-radius: 3rem;
+      text-decoration: none;
+      transition: background 0.2s, transform 0.15s;
+      box-shadow: 0 4px 18px rgba(37,211,102,0.35);
+      white-space: nowrap;
+    }
+    .btn-wa:hover { background: var(--wa-dark); transform: translateY(-2px); }
+
+    .btn-wa-outline {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.6rem;
+      background: transparent;
+      color: var(--wa-green);
+      font-family: 'Inter', sans-serif;
+      font-size: 1rem;
+      font-weight: 600;
+      padding: 0.85rem 1.75rem;
+      border-radius: 3rem;
+      border: 2px solid var(--wa-green);
+      text-decoration: none;
+      transition: all 0.2s;
+    }
+    .btn-wa-outline:hover { background: var(--wa-green); color: #fff; }
+
+    /* ── FLOATING WA — hidden by default, shown via JS after scroll ── */
+    /* FIX 2 & 3: botão flutuante para mobile (centro-baixo) e desktop (canto direito),
+       ambos surgem após scroll, eliminando a briga com o botão do hero */
+    .float-wa {
+      position: fixed;
+      z-index: 999;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.3s, transform 0.3s;
+      transform: translateY(8px);
+    }
+    .float-wa.visible {
+      opacity: 1;
+      pointer-events: auto;
+      transform: translateY(0);
+    }
+    /* Mobile: barra centralizada na base */
+    @media (max-width: 900px) {
+      .float-wa {
+        bottom: 1.25rem;
+        left: 50%;
+        transform: translateX(-50%) translateY(8px);
+      }
+      .float-wa.visible {
+        transform: translateX(-50%) translateY(0);
+      }
+    }
+    /* Desktop: fab no canto inferior direito, apenas ícone + texto curto */
+    @media (min-width: 901px) {
+      .float-wa {
+        bottom: 2rem;
+        right: 2rem;
+        border-radius: 3rem;
+      }
+    }
+
+    /* ── CFM COMPLIANCE BAR ── */
+    .cfm-bar {
+      background: var(--ink);
+      padding: 0.55rem 0;
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+    }
+    .cfm-bar-inner {
+      font-size: 0.74rem;
+      color: rgba(255,255,255,0.55);
+      text-align: center;
+      letter-spacing: 0.01em;
+    }
+
+    /* ── HERO ── */
+    .hero {
+      background: var(--ink);
+      min-height: 92vh;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+      gap: 3rem;
+      padding: 5rem 0 0;
+      overflow: hidden;
+      position: relative;
+    }
+    .hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(ellipse 60% 80% at 65% 50%, rgba(10,124,107,0.18) 0%, transparent 70%);
+      pointer-events: none;
+    }
+    .hero-text { position: relative; z-index: 1; padding-bottom: 5rem; }
+
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: rgba(10,124,107,0.2);
+      border: 1px solid rgba(10,124,107,0.5);
+      border-radius: 2rem;
+      padding: 0.35rem 0.9rem;
+      font-size: 0.75rem;
+      font-weight: 600;
+      color: #6EE7D5;
+      margin-bottom: 1.75rem;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+    }
+    .hero h1 {
+      font-size: clamp(2.1rem, 4vw, 3.2rem);
+      color: var(--white);
+      margin-bottom: 1.25rem;
+      font-weight: 900;
+    }
+    .hero h1 em { font-style: normal; color: #6EE7D5; }
+    .hero-sub {
+      font-size: 1.05rem;
+      color: rgba(255,255,255,0.65);
+      max-width: 480px;
+      margin-bottom: 2rem;
+      line-height: 1.7;
+    }
+    .hero-micro {
+      margin-top: 0.9rem;
+      font-size: 0.8rem;
+      color: rgba(255,255,255,0.45);
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+    .hero-micro span { display: flex; align-items: center; gap: 0.3rem; }
+    .hero-micro span::before { content: '✓'; color: var(--wa-green); font-weight: 700; }
+
+    .consent-note {
+      margin-top: 1rem;
+      font-size: 0.74rem;
+      color: rgba(255,255,255,0.35);
+      max-width: 440px;
+      line-height: 1.5;
+    }
+    .consent-note a { color: rgba(255,255,255,0.55); text-decoration: underline; }
+    .consent-note a:hover { color: var(--teal); }
+
+    .hero-img-wrap {
+      position: relative;
+      align-self: flex-end;
+      display: flex;
+      justify-content: center;
+    }
+    .hero-img-wrap img {
+      width: 100%;
+      max-width: 440px;
+      object-fit: cover;
+      object-position: top center;
+      display: block;
+      filter: brightness(0.93) contrast(1.05);
+    }
+    .hero-img-placeholder {
+      width: 100%;
+      max-width: 440px;
+      height: 520px;
+      background: linear-gradient(160deg, #1a2a38 0%, #0D1117 100%);
+      border-radius: 1rem 1rem 0 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+      color: rgba(255,255,255,0.3);
+      font-size: 0.85rem;
+      text-align: center;
+      border: 1px dashed rgba(255,255,255,0.12);
+    }
+    .hero-img-placeholder svg { opacity: 0.3; }
+
+    /* ── AUTHORITY BAR — FIX 5: reformulada com rótulos contextuais ── */
+    .auth-bar {
+      background: var(--teal-dark);
+      padding: 2rem 0;
+    }
+    .auth-bar-inner {
+      display: flex;
+      align-items: stretch;
+      justify-content: center;
+      gap: 0;
+      flex-wrap: wrap;
+    }
+    .auth-item {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      padding: 0.5rem 2.5rem;
+      border-right: 1px solid rgba(255,255,255,0.15);
+    }
+    .auth-item:last-child { border-right: none; }
+    .auth-icon {
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      background: rgba(255,255,255,0.1);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+    .auth-icon svg { opacity: 0.9; }
+    .auth-text { display: flex; flex-direction: column; }
+    .auth-label {
+      font-size: 0.68rem;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.45);
+      margin-bottom: 0.15rem;
+    }
+    .auth-value {
+      font-size: 0.88rem;
+      font-weight: 600;
+      color: rgba(255,255,255,0.92);
+      line-height: 1.3;
+    }
+
+    /* ── SECTIONS shared ── */
+    section { padding: 5rem 0; }
+    section.alt { background: var(--cream); }
+    .section-header { max-width: 640px; margin: 0 auto 3rem; text-align: center; }
+    .section-header h2 { font-size: clamp(1.8rem, 3vw, 2.4rem); color: var(--ink); margin-bottom: 0.75rem; }
+    .section-header p { color: var(--slate); font-size: 1rem; line-height: 1.7; }
+
+    /* ── FOR WHO ── */
+    .cards-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; }
+    .card {
+      background: var(--white);
+      border: 1px solid var(--line);
+      border-radius: var(--r);
+      padding: 2rem 1.75rem;
+      transition: box-shadow 0.2s, transform 0.2s;
+    }
+    .card:hover { box-shadow: 0 8px 32px rgba(0,0,0,0.08); transform: translateY(-3px); }
+    .card-icon {
+      width: 48px; height: 48px;
+      border-radius: 0.5rem;
+      background: var(--teal-pale);
+      display: flex; align-items: center; justify-content: center;
+      margin-bottom: 1.25rem;
+    }
+    .card-icon svg { color: var(--teal); }
+    .card h3 { font-family: 'Inter', sans-serif; font-size: 1rem; font-weight: 700; margin-bottom: 0.5rem; color: var(--ink); }
+    .card p { font-size: 0.9rem; color: var(--slate); line-height: 1.65; }
+
+    /* ── HOW IT WORKS ── */
+    .steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; position: relative; }
+    .steps::before {
+      content: '';
+      position: absolute;
+      top: 2rem;
+      left: calc(16.67% + 1rem);
+      right: calc(16.67% + 1rem);
+      height: 1px;
+      background: var(--line);
+      z-index: 0;
+    }
+    .step { text-align: center; position: relative; z-index: 1; }
+    .step-num {
+      width: 4rem; height: 4rem;
+      border-radius: 50%;
+      background: var(--teal);
+      color: #fff;
+      font-size: 1.4rem; font-weight: 700;
+      font-family: 'Playfair Display', serif;
+      display: flex; align-items: center; justify-content: center;
+      margin: 0 auto 1.25rem;
+      box-shadow: 0 0 0 6px rgba(10,124,107,0.12);
+    }
+    .step h3 { font-size: 1.05rem; font-weight: 700; font-family: 'Inter', sans-serif; margin-bottom: 0.5rem; color: var(--ink); }
+    .step p { font-size: 0.9rem; color: var(--slate); line-height: 1.65; max-width: 260px; margin: 0 auto; }
+
+    /* ── ABOUT ── */
+    .about-grid { display: grid; grid-template-columns: 420px 1fr; gap: 4rem; align-items: center; }
+    .about-img { border-radius: 1rem; overflow: hidden; }
+    .about-img img { width: 100%; object-fit: cover; object-position: top; display: block; }
+    .about-img-placeholder {
+      width: 100%; height: 480px;
+      background: linear-gradient(160deg, #e8f0f5 0%, #d4e5ec 100%);
+      display: flex; flex-direction: column; align-items: center; justify-content: center;
+      gap: 0.75rem; color: var(--slate); font-size: 0.85rem; text-align: center;
+      border: 2px dashed var(--line); border-radius: 1rem;
+    }
+    .about-pull {
+      font-size: 1.35rem;
+      font-family: 'Playfair Display', serif;
+      color: var(--ink);
+      line-height: 1.4;
+      margin-bottom: 1.25rem;
+      padding-left: 1.25rem;
+      border-left: 3px solid var(--teal);
+    }
+    .about-text { color: var(--slate); font-size: 0.95rem; line-height: 1.8; margin-bottom: 1.5rem; }
+    .about-tags { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 2rem; }
+    .tag {
+      background: var(--teal-pale);
+      color: var(--teal-dark);
+      font-size: 0.78rem; font-weight: 600;
+      padding: 0.35rem 0.85rem;
+      border-radius: 2rem;
+    }
+
+    /* ── SPECIALTIES ── */
+    .spec-grid { display: flex; flex-wrap: wrap; gap: 0.65rem; justify-content: center; }
+    .spec-chip {
+      background: var(--white);
+      border: 1.5px solid var(--line);
+      border-radius: 2rem;
+      padding: 0.5rem 1.1rem;
+      font-size: 0.85rem; font-weight: 500;
+      color: var(--ink-soft);
+      transition: all 0.18s;
+    }
+    .spec-chip:hover { border-color: var(--teal); color: var(--teal); background: var(--teal-pale); }
+
+    /* ── MAP — FIX 6 ── */
+    .map-section { padding: 0; }
+    .map-wrapper {
+      display: grid;
+      grid-template-columns: 1fr 340px;
+      height: 380px;
+    }
+    .map-wrapper iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+      display: block;
+    }
+    .map-info {
+      background: var(--ink);
+      padding: 2.5rem 2rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 1.5rem;
+    }
+    .map-info-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.25rem;
+      color: var(--white);
+      line-height: 1.3;
+    }
+    .map-detail {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.75rem;
+      font-size: 0.88rem;
+      color: rgba(255,255,255,0.65);
+      line-height: 1.5;
+    }
+    .map-detail svg { flex-shrink: 0; margin-top: 2px; opacity: 0.7; }
+
+    /* ── FAQ ── */
+    .faq-list { max-width: 720px; margin: 0 auto; }
+    .faq-item { border-bottom: 1px solid var(--line); }
+    .faq-item:first-child { border-top: 1px solid var(--line); }
+    .faq-q {
+      width: 100%; background: none; border: none; text-align: left;
+      padding: 1.25rem 0;
+      font-family: 'Inter', sans-serif; font-size: 0.97rem; font-weight: 600;
+      color: var(--ink); cursor: pointer;
+      display: flex; justify-content: space-between; align-items: center; gap: 1rem;
+    }
+    .faq-q:hover { color: var(--teal); }
+    .faq-icon {
+      flex-shrink: 0; width: 20px; height: 20px; border-radius: 50%;
+      border: 1.5px solid currentColor;
+      display: flex; align-items: center; justify-content: center;
+      transition: transform 0.2s;
+    }
+    .faq-item.open .faq-icon { transform: rotate(45deg); }
+    .faq-a { display: none; padding-bottom: 1.25rem; font-size: 0.9rem; color: var(--slate); line-height: 1.75; }
+    .faq-item.open .faq-a { display: block; }
+
+    /* ── FINAL CTA ── */
+    .cta-final { background: var(--teal-dark); padding: 5rem 0; text-align: center; }
+    .cta-final h2 {
+      font-size: clamp(1.9rem, 3.5vw, 2.8rem);
+      color: var(--white);
+      max-width: 680px;
+      margin: 0 auto 1rem;
+    }
+    .cta-final p { color: rgba(255,255,255,0.65); font-size: 1rem; margin-bottom: 2rem; }
+    .cta-final-micro {
+      margin-top: 1rem;
+      font-size: 0.78rem;
+      color: rgba(255,255,255,0.4);
+      display: flex; align-items: center; justify-content: center;
+      gap: 1.25rem; flex-wrap: wrap;
+    }
+    .cta-final-micro span { display: flex; align-items: center; gap: 0.3rem; }
+    .cta-final-micro span::before { content: '·'; color: rgba(255,255,255,0.25); }
+    .cta-final-micro span:first-child::before { content: ''; }
+
+    /* ── COOKIE BANNER (LGPD) ── */
+    .cookie-overlay {
+      position: fixed;
+      inset: 0;
+      background: rgba(13,17,23,0.55);
+      backdrop-filter: blur(2px);
+      z-index: 1100;
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.25s;
+    }
+    .cookie-overlay.visible { opacity: 1; pointer-events: auto; }
+
+    .cookie-banner {
+      background: var(--white);
+      border-radius: 1rem 1rem 0 0;
+      max-width: 720px;
+      width: 100%;
+      padding: 1.75rem 1.75rem 1.5rem;
+      box-shadow: 0 -8px 40px rgba(0,0,0,0.25);
+      transform: translateY(12px);
+      transition: transform 0.25s;
+    }
+    .cookie-overlay.visible .cookie-banner { transform: translateY(0); }
+
+    .cookie-banner h3 {
+      font-family: 'Inter', sans-serif;
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--ink);
+      margin-bottom: 0.6rem;
+    }
+    .cookie-banner p {
+      font-size: 0.87rem;
+      color: var(--slate);
+      line-height: 1.65;
+      margin-bottom: 1.1rem;
+    }
+    .cookie-banner p a { color: var(--teal); font-weight: 600; text-decoration: underline; }
+
+    .cookie-prefs {
+      display: none;
+      border-top: 1px solid var(--line);
+      padding-top: 1rem;
+      margin-bottom: 1rem;
+    }
+    .cookie-prefs.open { display: block; }
+    .cookie-pref-row {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 1rem;
+      padding: 0.7rem 0;
+      border-bottom: 1px solid var(--line);
+    }
+    .cookie-pref-row:last-child { border-bottom: none; }
+    .cookie-pref-text strong { display: block; font-size: 0.85rem; color: var(--ink); margin-bottom: 0.2rem; }
+    .cookie-pref-text span { font-size: 0.78rem; color: var(--slate); line-height: 1.5; }
+
+    .switch { position: relative; flex-shrink: 0; width: 42px; height: 24px; }
+    .switch input { opacity: 0; width: 0; height: 0; }
+    .switch-track {
+      position: absolute; inset: 0; cursor: pointer;
+      background: var(--line); border-radius: 2rem; transition: background 0.2s;
+    }
+    .switch-track::before {
+      content: ''; position: absolute; width: 18px; height: 18px;
+      left: 3px; bottom: 3px; background: #fff; border-radius: 50%; transition: transform 0.2s;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.25);
+    }
+    .switch input:checked + .switch-track { background: var(--teal); }
+    .switch input:checked + .switch-track::before { transform: translateX(18px); }
+    .switch input:disabled + .switch-track { background: var(--slate); opacity: 0.5; cursor: not-allowed; }
+
+    .cookie-actions { display: flex; flex-wrap: wrap; gap: 0.6rem; }
+    .cookie-btn {
+      flex: 1;
+      min-width: 140px;
+      padding: 0.75rem 1rem;
+      border-radius: 0.6rem;
+      font-family: 'Inter', sans-serif;
+      font-size: 0.85rem;
+      font-weight: 600;
+      cursor: pointer;
+      border: 1.5px solid var(--ink);
+      background: var(--white);
+      color: var(--ink);
+      transition: all 0.15s;
+    }
+    .cookie-btn:hover { background: var(--cream); }
+    .cookie-btn.primary { background: var(--teal); border-color: var(--teal); color: #fff; }
+    .cookie-btn.primary:hover { background: var(--teal-dark); }
+    .cookie-btn.text {
+      flex: 0;
+      border: none;
+      background: none;
+      text-decoration: underline;
+      color: var(--slate);
+    }
+
+    .cookie-settings-link {
+      position: fixed;
+      bottom: 1rem;
+      left: 1rem;
+      z-index: 900;
+      background: var(--ink);
+      color: rgba(255,255,255,0.7);
+      font-size: 0.7rem;
+      padding: 0.4rem 0.8rem;
+      border-radius: 2rem;
+      text-decoration: none;
+      opacity: 0.6;
+      transition: opacity 0.2s;
+    }
+    .cookie-settings-link:hover { opacity: 1; }
+
+    @media (max-width: 600px) {
+      .cookie-banner { padding: 1.5rem 1.25rem 1.25rem; }
+      .cookie-actions { flex-direction: column; }
+      .cookie-btn { min-width: 0; }
+      .cookie-settings-link { bottom: 0.75rem; left: 0.75rem; font-size: 0.65rem; }
+    }
+
+    /* ── FOOTER ── */
+    footer { background: var(--ink); padding: 2.5rem 0; }
+    .footer-inner {
+      display: flex; align-items: center; justify-content: space-between;
+      flex-wrap: wrap; gap: 1rem;
+    }
+    .footer-name { font-family: 'Playfair Display', serif; font-size: 1.1rem; color: var(--white); }
+    .footer-name span { color: var(--teal); font-size: 0.75rem; font-family: 'Inter', sans-serif; display: block; font-weight: 500; }
+    .footer-info { font-size: 0.78rem; color: rgba(255,255,255,0.35); text-align: right; line-height: 1.7; }
+    .footer-info a { color: rgba(255,255,255,0.5); text-decoration: none; }
+
+    .footer-legal {
+      margin-top: 1.75rem;
+      padding-top: 1.25rem;
+      border-top: 1px solid rgba(255,255,255,0.08);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.6rem;
+      flex-wrap: wrap;
+      font-size: 0.74rem;
+      color: rgba(255,255,255,0.4);
+    }
+    .footer-legal a, .footer-legal-btn {
+      color: rgba(255,255,255,0.55);
+      text-decoration: none;
+      background: none;
+      border: none;
+      font-size: 0.74rem;
+      cursor: pointer;
+      font-family: 'Inter', sans-serif;
+    }
+    .footer-legal a:hover, .footer-legal-btn:hover { color: var(--teal); text-decoration: underline; }
+    .footer-legal-divider { color: rgba(255,255,255,0.2); }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 900px) {
+      .container { padding: 0 1.25rem; } /* FIX 1 mobile: margem mais contida mas presente */
+      .hero { grid-template-columns: 1fr; padding: 4rem 0 0; min-height: auto; }
+      .hero-text { padding: 0 0 2rem; }
+      .hero-img-wrap { justify-content: center; }
+      .hero-img-wrap img, .hero-img-placeholder { max-width: 340px; height: 380px; border-radius: 1rem; }
+      .cards-3, .steps { grid-template-columns: 1fr; }
+      .steps::before { display: none; }
+      .about-grid { grid-template-columns: 1fr; }
+      .about-img { max-width: 400px; margin: 0 auto; }
+      .auth-bar-inner { flex-direction: column; align-items: flex-start; gap: 1rem; padding: 0 1.25rem; }
+      .auth-item { border-right: none; border-bottom: 1px solid rgba(255,255,255,0.1); padding: 0.75rem 0; width: 100%; }
+      .auth-item:last-child { border-bottom: none; }
+      .map-wrapper { grid-template-columns: 1fr; height: auto; }
+      .map-wrapper iframe { height: 280px; }
+      .map-info { padding: 1.75rem 1.25rem; }
+      .footer-inner { flex-direction: column; align-items: flex-start; }
+      .footer-info { text-align: left; }
+      body { padding-bottom: 5rem; }
+    }
+
+    @media (max-width: 600px) {
+      section { padding: 3.5rem 0; }
+      .hero h1 { font-size: 1.9rem; }
+    }
+  </style>
 </head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TZPXJ5C2"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
 
-<body id="top">
+<!-- CFM COMPLIANCE BAR — identificação obrigatória conforme Art. 4º e 6º da Resolução CFM nº 2.336/2023 -->
+<div class="cfm-bar">
+  <div class="container cfm-bar-inner">
+    Dr. Gabriel Kamei — MÉDICO · CRM-AM 13.068 · Oncologia Clínica · RQE 6001
+  </div>
+</div>
 
-    <!-- header
-    ================================================== -->
-    <header class="s-header">
+<!-- HERO (topbar removida — FIX 4) -->
+<section class="hero">
+  <div class="container" style="display:contents;">
+    <div class="hero-text container">
+      <div class="hero-badge">
+        <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><circle cx="6" cy="6" r="5" fill="#6EE7D5"/></svg>
+        Oncologista Clínico · RQE 6001 · Manaus, AM
+      </div>
+      <h1>Cuidado especializado em oncologia clínica.<br/><em>O próximo passo começa com uma conversa.</em></h1>
+      <p class="hero-sub">Dr. Gabriel Kamei é médico oncologista clínico, com formação pelo Hospital de Amor de Barretos, atendendo em Manaus pelo grupo Oncoclínicas®.</p>
+      <a id="hero-cta" class="btn-wa"
+         href="https://wa.me/5592981644892?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20consulta%20com%20o%20Dr.%20Gabriel%20Kamei."
+         target="_blank" rel="noopener">
+        <svg class="wa-svg" width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.126 1.532 5.857L.057 23.882a.5.5 0 0 0 .613.613l6.077-1.461A11.942 11.942 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.892a9.902 9.902 0 0 1-5.031-1.37l-.36-.214-3.733.898.929-3.67-.235-.376A9.862 9.862 0 0 1 2.108 12C2.108 6.54 6.54 2.108 12 2.108c5.461 0 9.892 4.432 9.892 9.892 0 5.461-4.431 9.892-9.892 9.892z"/></svg>
+        Quero agendar minha consulta
+      </a>
+      <div class="hero-micro">
+        <span>Retorno em até 24h</span>
+        <span>Atendimento direto pelo WhatsApp</span>
+        <span>Particular e convênios</span>
+      </div>
+      <p class="consent-note">Ao entrar em contato, você concorda com o tratamento dos seus dados conforme nossa <a href="privacidade.html">Política de Privacidade</a>.</p>
+    </div>
+    <div class="hero-img-wrap">
+      <img
+        src="https://gabrielkameionco.github.io/images/kamei-full-body-cropped.png"
+        alt="Dr. Gabriel Kamei — Oncologista Clínico"
+        onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+      />
+      <div class="hero-img-placeholder" style="display:none;">
+        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg>
+        <span>Foto do Dr. Gabriel<br/>substituir aqui</span>
+      </div>
+    </div>
+  </div>
+</section>
 
-        <div class="header-logo">
-            <a class="site-logo" href="index.html">
-                <img data-aos="fade-up" src="images/oncologia-sensumed-logo-100.png" alt="Homepage">
-            </a>
+<!-- AUTHORITY BAR — FIX 5: rótulos contextuais tornando cada informação autoexplicativa -->
+<div class="auth-bar">
+  <div class="container">
+    <div class="auth-bar-inner">
+      <div class="auth-item">
+        <div class="auth-icon">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><path d="M22 10v6M2 10l10-7 10 7"/><path d="M6 10v8a1 1 0 0 0 1 1h4v-5h2v5h4a1 1 0 0 0 1-1v-8"/></svg>
         </div>
+        <div class="auth-text">
+          <span class="auth-label">Formação em oncologia</span>
+          <span class="auth-value">Hospital de Amor de Barretos</span>
+        </div>
+      </div>
+      <div class="auth-item">
+        <div class="auth-icon">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+        </div>
+        <div class="auth-text">
+          <span class="auth-label">Grupo médico</span>
+          <span class="auth-value">Oncoclínicas®</span>
+        </div>
+      </div>
+      <div class="auth-item">
+        <div class="auth-icon">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        </div>
+        <div class="auth-text">
+          <span class="auth-label">Graduação em medicina</span>
+          <span class="auth-value">Universidade Federal da Bahia</span>
+        </div>
+      </div>
+      <div class="auth-item">
+        <div class="auth-icon">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        </div>
+        <div class="auth-text">
+          <span class="auth-label">Local de atendimento</span>
+          <span class="auth-value">Manaus, AM</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
-        <nav class="header-nav">
+<!-- FOR WHO -->
+<section>
+  <div class="container">
+    <div class="section-header">
+      <p class="eyebrow">Para quem é esta consulta</p>
+      <h2>Quando você deve buscar um oncologista clínico?</h2>
+      <p>Se você se identifica com um desses cenários, esses são os casos mais comuns que levam pacientes a procurar essa consulta.</p>
+    </div>
+    <div class="cards-3">
+      <div class="card">
+        <div class="card-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+        </div>
+        <h3>Diagnóstico recém-confirmado</h3>
+        <p>Você recebeu um laudo de biópsia e precisa entender os próximos passos do tratamento. O oncologista clínico é o especialista que acompanha essa etapa.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        </div>
+        <h3>Busca por segunda opinião</h3>
+        <p>Você já tem acompanhamento, mas quer avaliar outras opções ou confirmar se o plano atual é o mais adequado para o seu caso.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+        </div>
+        <h3>Familiar com diagnóstico de câncer</h3>
+        <p>Você quer ajuda para entender o que alguém próximo está enfrentando e como apoiar da melhor forma possível durante o tratamento.</p>
+      </div>
+    </div>
+  </div>
+</section>
 
-            <a href="#0" class="header-nav__close" title="close"><span>Close</span></a>
+<!-- HOW IT WORKS -->
+<section class="alt">
+  <div class="container">
+    <div class="section-header">
+      <p class="eyebrow">Como funciona</p>
+      <h2>Como é a consulta com o Dr. Gabriel?</h2>
+      <p>Veja o que esperar, etapa por etapa.</p>
+    </div>
+    <div class="steps">
+      <div class="step">
+        <div class="step-num">1</div>
+        <h3>Você entra em contato</h3>
+        <p>Mande uma mensagem pelo WhatsApp com seu nome e o tipo de diagnóstico recebido. A equipe retorna em até 24h para confirmar data e horário.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">2</div>
+        <h3>Consulta presencial em Manaus</h3>
+        <p>O Dr. Gabriel avalia seu caso, revisa seus exames e explica, em linguagem clara, o que está acontecendo e quais são as opções de tratamento.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">3</div>
+        <h3>Definição dos próximos passos</h3>
+        <p>A partir da avaliação clínica, o Dr. Gabriel discute com você as condutas possíveis para o seu caso, sempre respeitando a individualidade de cada diagnóstico.</p>
+      </div>
+    </div>
+    <div style="text-align:center; margin-top:3rem;">
+      <a class="btn-wa"
+         href="https://wa.me/5592981644892?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20consulta%20com%20o%20Dr.%20Gabriel%20Kamei."
+         target="_blank" rel="noopener">
+        <svg class="wa-svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.126 1.532 5.857L.057 23.882a.5.5 0 0 0 .613.613l6.077-1.461A11.942 11.942 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.892a9.902 9.902 0 0 1-5.031-1.37l-.36-.214-3.733.898.929-3.67-.235-.376A9.862 9.862 0 0 1 2.108 12C2.108 6.54 6.54 2.108 12 2.108c5.461 0 9.892 4.432 9.892 9.892 0 5.461-4.431 9.892-9.892 9.892z"/></svg>
+        Quero agendar minha consulta
+      </a>
+    </div>
+  </div>
+</section>
 
-            <div class="header-nav__content">
-                <h3>Menu</h3>
-                
-                <ul class="header-nav__list">
-                    <li class="current"><a class="smoothscroll"  href="#home" title="home">Home</a></li>
-                    <li><a class="smoothscroll"  href="#sobre" title="Minha trajetória">Minha trajetória</a></li>
-                    <li><a class="smoothscroll"  href="#especialidades" title="Especialidades">Especialidades</a></li>
-                    <li><a class="smoothscroll"  href="#contato" title="Contato">Contato</a></li>
-                </ul>
-    
-                <ul class="header-nav__social">
-                    <li>
-                        <a href="https://wa.me/5592981644892/"><i class="fab fa-whatsapp" aria-hidden="true"></i></a>
-                    </li>
-                    <li>
-                        <a href="https://www.instagram.com/gabitecan.onco"><i class="fab fa-instagram" aria-hidden="true"></i></a>
-                    </li>
-                    <li>
-                        <a href="https://www.linkedin.com/in/gabrielkameionco"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
-                    </li>
-                    <li>
-                        <a href="https://sensumed.signa.health/#/home?step=local-type"><i class="fas fa-calendar" aria-hidden="true"></i></a>
-                    </li>
-                </ul>
-
-            </div> <!-- end header-nav__content -->
-
-        </nav>  <!-- end header-nav -->
-
-        <a class="header-menu-toggle" href="#0">
-            <span class="header-menu-text">Menu</span>
-            <span class="header-menu-icon"></span>
+<!-- ABOUT -->
+<section>
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-img">
+        <img
+          src="https://gabrielkameionco.github.io/images/kamei-full-body-cropped.png"
+          alt="Dr. Gabriel Kamei"
+          onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+        />
+        <div class="about-img-placeholder" style="display:none;">
+          <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg>
+          <span>Foto do Dr. Gabriel<br/>substituir aqui</span>
+        </div>
+      </div>
+      <div class="about-content">
+        <p class="eyebrow">Sobre o médico</p>
+        <blockquote class="about-pull">Formação técnica sólida, com atendimento próximo ao paciente.</blockquote>
+        <p class="about-text">Formado em medicina pela Universidade Federal da Bahia, o Dr. Gabriel Kamei (CRM-AM 13.068) realizou residência em Oncologia Clínica no Hospital de Amor de Barretos, onde também atuou em Pesquisa Clínica e Cuidados Paliativos.</p>
+        <p class="about-text">Atualmente atende em Manaus pelo grupo Oncoclínicas®, com foco em acompanhar cada paciente com clareza sobre o diagnóstico e as possibilidades de tratamento disponíveis.</p>
+        <div class="about-tags">
+          <span class="tag">Hospital de Amor de Barretos</span>
+          <span class="tag">Oncoclínicas®</span>
+          <span class="tag">UFBA</span>
+          <span class="tag">Pesquisa Clínica</span>
+          <span class="tag">Cuidados Paliativos</span>
+        </div>
+        <a class="btn-wa-outline"
+           href="https://wa.me/5592981644892?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20consulta%20com%20o%20Dr.%20Gabriel%20Kamei."
+           target="_blank" rel="noopener">
+          <svg class="wa-svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.126 1.532 5.857L.057 23.882a.5.5 0 0 0 .613.613l6.077-1.461A11.942 11.942 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.892a9.902 9.902 0 0 1-5.031-1.37l-.36-.214-3.733.898.929-3.67-.235-.376A9.862 9.862 0 0 1 2.108 12C2.108 6.54 6.54 2.108 12 2.108c5.461 0 9.892 4.432 9.892 9.892 0 5.461-4.431 9.892-9.892 9.892z"/></svg>
+          Agendar consulta pelo WhatsApp
         </a>
+      </div>
+    </div>
+  </div>
+</section>
 
-    </header> <!-- end s-header -->
+<!-- SPECIALTIES -->
+<section class="alt">
+  <div class="container">
+    <div class="section-header">
+      <p class="eyebrow">Atuação clínica</p>
+      <h2>Condições acompanhadas na rotina de atendimento</h2>
+      <p>Como oncologista clínico (RQE 6001), o Dr. Gabriel acompanha pacientes com diferentes tipos de tumores sólidos, conduzindo o tratamento clínico e articulando com as demais especialidades quando necessário.</p>
+    </div>
+    <div class="spec-grid">
+      <span class="spec-chip">Câncer de mama</span>
+      <span class="spec-chip">Câncer de próstata</span>
+      <span class="spec-chip">Câncer colorretal</span>
+      <span class="spec-chip">Câncer de pulmão</span>
+      <span class="spec-chip">Câncer de estômago</span>
+      <span class="spec-chip">Tumores do SNC</span>
+      <span class="spec-chip">Quimioterapia</span>
+      <span class="spec-chip">Imunoterapia</span>
+      <span class="spec-chip">Terapia-alvo</span>
+      <span class="spec-chip">Cuidados Paliativos</span>
+      <span class="spec-chip">Segunda opinião oncológica</span>
+    </div>
+  </div>
+</section>
 
+<!-- FAQ -->
+<section>
+  <div class="container">
+    <div class="section-header">
+      <p class="eyebrow">Dúvidas frequentes</p>
+      <h2>Perguntas frequentes</h2>
+    </div>
+    <div class="faq-list">
+      <div class="faq-item">
+        <button class="faq-q">
+          O Dr. Gabriel atende por convênio?
+          <span class="faq-icon"><svg width="10" height="10" viewBox="0 0 10 10" fill="currentColor"><path d="M5 1v8M1 5h8"/></svg></span>
+        </button>
+        <div class="faq-a">O atendimento é realizado pela Sensumed Oncologia, parte do grupo Oncoclínicas®. Para verificar quais convênios são aceitos e condições atuais, entre em contato pelo WhatsApp — a equipe responde em até 24h.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">
+          Preciso de encaminhamento médico para marcar consulta?
+          <span class="faq-icon"><svg width="10" height="10" viewBox="0 0 10 10" fill="currentColor"><path d="M5 1v8M1 5h8"/></svg></span>
+        </button>
+        <div class="faq-a">Não. Você pode agendar diretamente, mesmo sem encaminhamento de outro médico. Basta entrar em contato pelo WhatsApp com seu nome e, se possível, o tipo de diagnóstico recebido.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">
+          Quanto tempo dura a primeira consulta?
+          <span class="faq-icon"><svg width="10" height="10" viewBox="0 0 10 10" fill="currentColor"><path d="M5 1v8M1 5h8"/></svg></span>
+        </button>
+        <div class="faq-a">A primeira consulta costuma durar entre 40 e 60 minutos. O Dr. Gabriel dedica tempo para revisar seus exames com atenção e responder todas as dúvidas — sem pressa.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">
+          O atendimento é presencial ou online?
+          <span class="faq-icon"><svg width="10" height="10" viewBox="0 0 10 10" fill="currentColor"><path d="M5 1v8M1 5h8"/></svg></span>
+        </button>
+        <div class="faq-a">O atendimento é presencial, em Manaus/AM. Para pacientes de outras cidades ou municípios do interior, entre em contato pelo WhatsApp para verificar as possibilidades disponíveis.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">
+          Já tenho um oncologista. Posso buscar segunda opinião?
+          <span class="faq-icon"><svg width="10" height="10" viewBox="0 0 10 10" fill="currentColor"><path d="M5 1v8M1 5h8"/></svg></span>
+        </button>
+        <div class="faq-a">Sim. Segunda opinião é um direito do paciente e uma prática amplamente incentivada em oncologia. Entre em contato, compartilhe sua situação e o Dr. Gabriel avalia seu caso com total transparência.</div>
+      </div>
+    </div>
+  </div>
+</section>
 
-    <!-- home
-    ================================================== -->
-    <section id="home" class="s-home target-section" data-parallax="scroll" data-image-src="images/background/dna.jpg" data-natural-width=1920 data-natural-height=1080 data-position-y=center>
+<!-- MAP — FIX 6 -->
+<div class="map-section">
+  <div class="map-wrapper">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3983.925966979276!2d-60.0141249240863!3d-3.114289096861247!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x926c0544f86d20ed%3A0x33e222b7892f5f5e!2sR.%20Professor%20Marciano%20Armond%2C%20545%20-%20Adrian%C3%B3polis%2C%20Manaus%20-%20AM%2C%2069057-030%2C%20Brazil!5e0!3m2!1sen!2sca!4v1728834465742!5m2!1sen!2sca"
+      allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+      title="Localização da clínica — Sensumed Oncologia, Manaus">
+    </iframe>
+    <div class="map-info">
+      <div class="map-info-title">Onde nos encontrar</div>
+      <div class="map-detail">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        R. Professor Marciano Armond, 545<br/>Adrianópolis · Manaus, AM
+      </div>
+      <div class="map-detail">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+        Sensumed Oncologia | Oncoclínicas®
+      </div>
+      <a class="btn-wa"
+         href="https://wa.me/5592981644892?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20consulta%20com%20o%20Dr.%20Gabriel%20Kamei."
+         target="_blank" rel="noopener" style="align-self:flex-start;">
+        <svg class="wa-svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.126 1.532 5.857L.057 23.882a.5.5 0 0 0 .613.613l6.077-1.461A11.942 11.942 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.892a9.902 9.902 0 0 1-5.031-1.37l-.36-.214-3.733.898.929-3.67-.235-.376A9.862 9.862 0 0 1 2.108 12C2.108 6.54 6.54 2.108 12 2.108c5.461 0 9.892 4.432 9.892 9.892 0 5.461-4.431 9.892-9.892 9.892z"/></svg>
+        Quero agendar minha consulta
+      </a>
+    </div>
+  </div>
+</div>
 
-        <div class="overlay"></div>
-        <div class="shadow-overlay"></div>
+<!-- FINAL CTA — FIX 7: texto e botão padronizados -->
+<div class="cta-final">
+  <div class="container">
+    <h2>Quer entender melhor seu caso e as opções de tratamento disponíveis?</h2>
+    <p>Fale com a equipe do Dr. Gabriel Kamei pelo WhatsApp e agende sua consulta.</p>
+    <a class="btn-wa"
+       href="https://wa.me/5592981644892?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20consulta%20com%20o%20Dr.%20Gabriel%20Kamei."
+       target="_blank" rel="noopener">
+      <svg class="wa-svg" width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.126 1.532 5.857L.057 23.882a.5.5 0 0 0 .613.613l6.077-1.461A11.942 11.942 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.892a9.902 9.902 0 0 1-5.031-1.37l-.36-.214-3.733.898.929-3.67-.235-.376A9.862 9.862 0 0 1 2.108 12C2.108 6.54 6.54 2.108 12 2.108c5.461 0 9.892 4.432 9.892 9.892 0 5.461-4.431 9.892-9.892 9.892z"/></svg>
+      Quero agendar minha consulta
+    </a>
+    <div class="cta-final-micro">
+      <span>Atendimento em Manaus</span>
+      <span>Oncoclínicas®</span>
+      <span>Retorno em até 24h</span>
+    </div>
+    <p class="consent-note" style="margin:1.25rem auto 0; text-align:center;">Ao entrar em contato, você concorda com o tratamento dos seus dados conforme nossa <a href="privacidade.html">Política de Privacidade</a>.</p>
+  </div>
+</div>
 
-        <div class="home-content">
-            <div class="row home-content__main flex-row-xl">
-                <div>
-                    <h3>Dr. Gabriel Kamei</h3>
-                    <h1>
-                        Oncologista clínico especialista no tratamento
-                        de tumores sólidos malignos. 
-                    </h1>
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="footer-inner">
+      <div class="footer-name">
+        Dr. Gabriel Kamei — MÉDICO
+        <span>CRM-AM 13.068 · Oncologia Clínica · RQE 6001</span>
+      </div>
+      <div class="footer-info">
+        Sensumed Oncologia | Oncoclínicas®<br/>
+        R. Prof. Marciano Armond, 545 — Adrianópolis, Manaus/AM<br/>
+        <a href="https://wa.me/5592981644892" target="_blank">+55 (92) 9 8164-4892</a>
+      </div>
+    </div>
+    <div class="footer-legal">
+      <a href="privacidade.html">Política de Privacidade</a>
+      <span class="footer-legal-divider">·</span>
+      <button type="button" id="open-cookie-prefs-footer" class="footer-legal-btn">Preferências de cookies</button>
+      <span class="footer-legal-divider">·</span>
+      <span>© 2026 Dr. Gabriel Kamei</span>
+    </div>
+  </div>
+</footer>
 
-                    <div class="home-content__buttons">
-                        <a href="#contato" class="smoothscroll btn btn--stroke">
-                            Contato
-                        </a>
-                        <a href="https://sensumed.signa.health/#/home?step=local-type" class="smoothscroll btn btn--stroke">
-                            Agende sua consulta
-                        </a>
-                    </div>
-                </div>
-                <img class="row home-picture" src="images/kamei-full-body-cropped.png">
-            </div>
-            <div class="home-content__scroll">
-                <a href="#sobre" class="scroll-link smoothscroll">
-                    <span>Arrasta pra cima</span>
-                </a>
-            </div>
+<!-- FLOATING WA — FIX 2 & 3: surge após scroll, sem briga com hero CTA -->
+<a id="float-wa" class="float-wa btn-wa"
+   href="https://wa.me/5592981644892?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20consulta%20com%20o%20Dr.%20Gabriel%20Kamei."
+   target="_blank" rel="noopener">
+  <svg class="wa-svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.126 1.532 5.857L.057 23.882a.5.5 0 0 0 .613.613l6.077-1.461A11.942 11.942 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.892a9.902 9.902 0 0 1-5.031-1.37l-.36-.214-3.733.898.929-3.67-.235-.376A9.862 9.862 0 0 1 2.108 12C2.108 6.54 6.54 2.108 12 2.108c5.461 0 9.892 4.432 9.892 9.892 0 5.461-4.431 9.892-9.892 9.892z"/></svg>
+  Quero agendar minha consulta
+</a>
 
-            <div class="home-content__line"></div>
+<!-- COOKIE BANNER (LGPD) -->
+<div id="cookie-overlay" class="cookie-overlay">
+  <div class="cookie-banner">
+    <h3>Sua privacidade importa</h3>
+    <p>
+      Usamos cookies essenciais para o funcionamento do site e, com sua autorização, cookies de análise e de
+      publicidade (Google Ads e Meta Ads) para entender como o site é usado e medir o resultado de campanhas.
+      Saiba mais na nossa <a href="privacidade.html">Política de Privacidade</a>.
+    </p>
 
-        </div> <!-- end home-content -->
-
-
-        <ul class="home-social">
-            <li>
-                <a href="https://wa.me/5592981644892/"><i class="fab fa-whatsapp" aria-hidden="true"></i><span>Whatsapp</span></a>
-            </li>
-            <li>
-                <a href="https://www.instagram.com/gabitecan.onco"><i class="fab fa-instagram" aria-hidden="true"></i><span>Instagram</span></a>
-            </li>
-            <li>
-                <a href="https://www.linkedin.com/in/gabrielkameionco"><i class="fab fa-linkedin" aria-hidden="true"></i><span>LinkedIn</span></a>
-            </li>
-            <li>
-                <a href="https://sensumed.signa.health/#/home?step=local-type"><i class="fas fa-calendar" aria-hidden="true"></i><span>Agendamento de consultas</span></a>
-            </li>
-        </ul> 
-        <!-- end home-social -->
-
-    </section> <!-- end s-home -->
-
-
-    <!-- sobre
-    ================================================== -->
-    <section id='sobre' class="s-about">
-
-        <div class="row section-header has-bottom-sep" data-aos="fade-up">
-            <div class="col-full">
-                <h3 class="subhead subhead--dark">Dr. Gabriel Kamei</h3>
-                <h1 class="display-1 display-1--light">Minha trajetória</h1>
-            </div>
-        </div> <!-- end section-header -->
-
-        <div class="row about-desc" data-aos="fade-up">
-            <div class="col-full">
-                <p>
-                    Soteropolitano, nascido e criado em Salvador/BA, me formei em medicina pela Universidade Federal da Bahia, atuei por um ano como médico das forças armadas (Marinha do Brasil) e logo após iniciei minha trajetória para me tornar especialista em Oncologia Clínica. Concluí a primeira residência de Clínica Médica no Hospital Regional de Juazeiro/BA e logo após a segunda residência de Oncologia Clínica pelo Hospital de Amor de Barretos (Antigo Hospital do Câncer de Barretos), instituição de renome nacional e internacional no que tange o tratamento de câncer no país, onde tive a oportunidade de atuar em diversos outras áreas relacionadas com a oncologia como a Pesquisa Clínica, Cuidados Paliativos, pontos fortes na formação dos oncologistas da instituição. Ao final da minha formação fui convidado para atuar como Oncologista na região norte do país pela Oncoclínicas® e aceitei mais esse desafio de cunho pessoal e profissional, entendendo a oportunidade de crescimento a ser adquirida, além de poder proporcionar para população manauara um atendimento de qualidade, a partir do acesso ao que há de mais novo e revolucionário no tratamento do câncer hoje em dia, proporcionado pelo grupo Oncoclínicas®, instituição ao qual faço parte hoje, uma empresa com renome nacional e internacional no que tange a assistência de qualidade aos pacientes oncológicos.
-                </p>
-            </div>
-        </div> <!-- end about-desc -->
-
-        <div class="about__line"></div>
-
-    </section> <!-- end s-about -->
-
-    <!-- clients
-    ================================================== -->
-    <section id="especialidades" class="s-clients">
-
-        <div class="row section-header" data-aos="fade-up">
-            <div class="col-full">
-                <h3 class="subhead">Saiba Mais!</h3>
-                <h1 class="display-2">Especialidades</h1>
-            </div>
-        </div> <!-- end section-header -->
-
-        <div class="row clients-testimonials" data-aos="fade-up">
-            <div class="col-full">
-                <div class="testimonials">
-                   
-                    <div class="testimonials__slide">
-                        <h2>Quando devo procurar um Oncologista Clínico?</h2>
-                        <p>
-                            Uma vez estabelecido o diagnóstico de câncer (pacientes com idade a partir dos 18 anos), o Oncologista Clínico é o profissional médico especializado responsável em conduzir os próximos passos necessários para definição do tratamento oncológico a ser realizado através da realização do estadiamento clínico (Exames de imagens, laboratoriais, anátomo-patológico e moleculares do tumor recém descoberto). O Oncologista é o profissional responsável também em dialogar com os demais especialistas que possam estar potencialmente envolvidos no tratamento do paciente (Cirurgião oncológico, Cirurgião torácico, Radioterapeuta, Mastologista, Urologista, entre outros) a fim de traçar a melhor estratégia e modalidade de tratamento (Neoadjuvante, adjuvante, perioperatório, paliativo) de acordo com o seu tipo de câncer e seu estadiamento, além der o profissional capacitado em atuar com Cuidados Paliativos com o intuito de amenizar o sofrimento do paciente e manejar os sintomas decorrentes da neoplasia em questão. Então, se você acabou de receber um diagnóstico de câncer através de algum exame de biópsia, seja ela qual for, o próximo passo é procurar um oncologista de sua confiança para traçar o melhor caminho a ser seguido!
-                        </p>
-                    </div>
-
-                   <div class="testimonials__slide">
-                        <h2>Quimioterapia</h2>
-                        <div class="flex-row justify-center">
-                            <div class="testimonials__video flex-grow3">
-                                <video class="media-card" preload="metadata" controls>
-                                    <source src="videos/Dr_Gabriel_Quimioterapia.mp4" type="video/mp4">
-                                    Your browser does not support the video tag.
-                                </video>
-                            </div>
-
-                            <p class="flex-shrink2 xl video-text">
-                                A quimioterapia é a modalidade mais antiga de tratamento para os pacientes com diagnóstico de câncer. Ela ainda é extremamente eficaz nas mas diversas patologias conhecidas, porém é sabido que possui um grau de toxicidade relevante por se tratar de uma terapia citotóxica não seletiva. A quimioterapia age de forma mais importante nas células cancerígenas justamente por possuírem uma maior velocidade de divisão/multiplicação, condição necessária para a atuação dos mais diversos quimioterápicos devido ao seu mecanismo de ação ser baseado nos diferentes momentos da divisão celular. Devido à falta de seletividade (acaba agindo em todas as células que estão em divisão celular), existe um maior cuidado na realização de medicamentos sintomáticos afim de minimizar os efeitos colaterais mais comumente apresentados pelos pacientes que necessitam vencer esta modalidade de tratamento (Como as náuseas, vômitos, diarréia, constipação, entre outros efeitos colaterais).
-                            </p>
-                        </div>
-                   </div>
-
-                   <div class="testimonials__slide">
-                        <h2>Radioterapia</h2>
-                        <div class="flex-row justify-center">
-                            <div class="testimonials__video">
-                                <video class="media-card" preload="metadata" controls>
-                                    <source src="videos/Dr_Gabriel_Radioterapia.mp4" type="video/mp4">
-                                    Your browser does not support the video tag.
-                                </video>
-                            </div>
-
-                            <p class="flex-shrink2 xl video-text">
-                                Outra modalidade muito conhecida e antiga (assim como a quimioterapia), a radioterapia veio se aprimorando cada vez mais ao longo das últimas décadas. Hoje em dia temos tratamentos cada vez mais tecnológicos e com baixíssimos índices de complicações ou toxicidades graças ao avanço das tecnologias aplicadas à modalidade, conseguindo direcionar de forma mais precisa e segura a emissão da radiação necessária única e exclusivamente às células cancerígenas nos mais diversos sítios do corpo humano. A radioterapia tem sua aplicabilidade em diversas modalidades, sendo utilizado em vários cenários de tratamento (Neoadjuvante, adjuvante, paliativo, definitivo), tornando-se hoje um importante aliado no tratamento do câncer.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="testimonials__slide">
-                        <h2>Terapia Alvo, Imunoterapia e Anticorpo-droga Conjugado</h2>
-
-                        <div class="flex-row justify-center">
-                            <div class="testimonials__video">
-                                <video class="media-card" preload="metadata" controls>
-                                    <source src="videos/Dr_Gabriel_Imunoterapia.mp4" type="video/mp4">
-                                    Your browser does not support the video tag.
-                                </video>
-                            </div>
-
-                            <p class="flex-shrink2 xl video-text">
-                                Com o avanço da medicina e um melhor entendimento sobre o genoma humano, passamos a desvendar o mundo intra-celular e com ele caminhamos para uma era de “Medicina Personalizada”, onde através do conhecimento de informações moleculares (Mutações que acontecem dentro das células cancerígenas) conseguimos direcionar drogas-alvo, ajudamos o nosso próprio sistema imunológico à reconhecer o inimigo e conseguimos combinar arsenais diferentes de tratamento que trouxeram uma mudança de paradigma no que tange o tratamento de câncer. Essas novas tecnologias trouxeram avanço significativo no aumento da expectativa de vida, taxas de cura, controle de doença e alívio de sintomas e já são amplamente utilizadas ao redor do mundo e aqui no Brasil, hoje em dia sendo utilizadas em combinação às modalidades ditas antigas (quimioterapia e radioterapia) ou de forma isolada, a depender do tipo de câncer e do grau de acometimento, trazendo impactos positivos grandiosos na vida dos pacientes!
-                            </p>
-                        </div>
-                    </div>
-                   
-                </div> <!-- end clients -->
-            </div> <!-- end col-full -->
-        </div> <!-- end clients-outer -->
-    </section> <!-- end s-clients -->
-
-
-    <!-- contato
-    ================================================== -->
-    <section id="contato" class="s-contact">
-
-        <div class="overlay"></div>
-        <div class="contact__line"></div>
-
-        <div class="row section-header" data-aos="fade-up">
-            <div class="col-full">
-                <h3 class="subhead">Contato</h3>
-                <h1 class="display-2 display-2--light">Dr. Gabriel Kamei</h1>
-                <p>
-                    Sensumed Oncologia | Oncoclínicas
-                </p>
-            </div>
+    <div id="cookie-prefs" class="cookie-prefs">
+      <div class="cookie-pref-row">
+        <div class="cookie-pref-text">
+          <strong>Cookies essenciais</strong>
+          <span>Necessários para o funcionamento básico do site. Não podem ser desativados.</span>
         </div>
-
-        <div class="row contact-content" data-aos="fade-up">
-            
-            <div class="contact-primary">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3983.925966979276!2d-60.0141249240863!3d-3.114289096861247!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x926c0544f86d20ed%3A0x33e222b7892f5f5e!2sR.%20Professor%20Marciano%20Armond%2C%20545%20-%20Adrian%C3%B3polis%2C%20Manaus%20-%20AM%2C%2069057-030%2C%20Brazil!5e0!3m2!1sen!2sca!4v1728834465742!5m2!1sen!2sca"
-                    class="media-card map" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-                </iframe>
-            </div>
-
-            <div class="contact-secondary">
-                <div class="contact-info">
-
-                    <h3 class="h6 hide-on-fullwidth">Contact</h3>
-
-                    <ul class="contact-social">
-                        <li>
-                            <i class="fab fa-whatsapp" aria-hidden="true"></i>
-                            <span>
-                                Whatsapp:
-                            </span>
-                            <a href="https://wa.me/5592981644892">
-                                <span>
-                                     +55 92 9 8164 4892
-                                </span>
-                            </a>
-                        </li>
-                        <li>
-                            <i class="fab fa-instagram" aria-hidden="true"></i>
-                            <span>
-                                Instagram:
-                            </span>
-                            <a href="https://www.instagram.com/gabitecan.onco">
-                                <span>
-                                    @gabitecan.onco
-                                </span>
-                            </a>
-                        </li>
-                        <li>
-                            <i class="fab fa-linkedin" aria-hidden="true"></i>
-                            <span>
-                                LinkedIn:
-                            </span>
-                            <a href="https://www.linkedin.com/in/gabrielkameionco">
-                                <span>
-                                    gabrielkameionco
-                                </span>
-                            </a>
-                        </li>
-                        <li>
-                            <i class="fa fa-map-marker-alt" aria-hidden="true"></i>
-                            <span>
-                                Endereço:
-                            </span>
-                            <a href="https://maps.app.goo.gl/4fNTisht2LcUGTJa7">
-                                <span>
-                                    R. Professor Marciano Armond, 545 - Adrianópolis, Manaus - AM, 69057-030
-                                </span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://sensumed.signa.health/#/home?step=local-type">
-                                <button>
-                                    <i class="fas fa-calendar-days" aria-hidden="true"></i>
-                                    <span>
-                                        Agende sua consulta
-                                    </span>
-                                </button>
-                            </a>
-                        </li>
-                    </ul>
-
-                </div>
-            </div>
-
+        <label class="switch">
+          <input type="checkbox" checked disabled />
+          <span class="switch-track"></span>
+        </label>
+      </div>
+      <div class="cookie-pref-row">
+        <div class="cookie-pref-text">
+          <strong>Cookies de análise</strong>
+          <span>Ajudam a entender como os visitantes usam o site (Google Tag Manager / Analytics).</span>
         </div>
+        <label class="switch">
+          <input type="checkbox" id="cookie-analytics-toggle" />
+          <span class="switch-track"></span>
+        </label>
+      </div>
+      <div class="cookie-pref-row">
+        <div class="cookie-pref-text">
+          <strong>Cookies de publicidade</strong>
+          <span>Usados pelo Google Ads e Meta Ads para medir campanhas e exibir remarketing a quem já visitou o site. Não segmentamos anúncios por dados de saúde.</span>
+        </div>
+        <label class="switch">
+          <input type="checkbox" id="cookie-ads-toggle" />
+          <span class="switch-track"></span>
+        </label>
+      </div>
+    </div>
 
-    </section>
+    <div class="cookie-actions">
+      <button type="button" id="cookie-manage" class="cookie-btn text">Personalizar</button>
+      <button type="button" id="cookie-reject" class="cookie-btn">Rejeitar não essenciais</button>
+      <button type="button" id="cookie-save" class="cookie-btn primary" style="display:none;">Salvar preferências</button>
+      <button type="button" id="cookie-accept" class="cookie-btn primary">Aceitar todos</button>
+    </div>
+  </div>
+</div>
 
-    <!-- footer
-    ================================================== -->
-     <!-- end footer -->
+<a href="#" id="cookie-settings-link" class="cookie-settings-link">Cookies</a>
 
-    <!-- preloader
-    ================================================== -->
+<script>
+  // FAQ accordion
+  document.querySelectorAll('.faq-q').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const item = btn.closest('.faq-item');
+      const isOpen = item.classList.contains('open');
+      document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+      if (!isOpen) item.classList.add('open');
+    });
+  });
 
-    <!-- Java Script
-    ================================================== -->
-    <script src="js/jquery-3.2.1.min.js"></script>
-    <script src="js/plugins.js"></script>
-    <script src="js/main.js"></script>
+  // Floating WA: aparece quando o botão do hero sai de vista (mobile e desktop)
+  const floatWa  = document.getElementById('float-wa');
+  const heroCta  = document.getElementById('hero-cta');
+
+  const observer = new IntersectionObserver(
+    ([entry]) => {
+      if (entry.isIntersecting) {
+        floatWa.classList.remove('visible');
+      } else {
+        floatWa.classList.add('visible');
+      }
+    },
+    { threshold: 0, rootMargin: '0px 0px -20px 0px' }
+  );
+
+  if (heroCta) observer.observe(heroCta);
+
+  // ── LGPD Cookie Consent ──
+  const COOKIE_KEY = 'lgpd_consent_v1';
+  const overlay   = document.getElementById('cookie-overlay');
+  const prefsBox  = document.getElementById('cookie-prefs');
+  const toggleAn  = document.getElementById('cookie-analytics-toggle');
+  const toggleAds = document.getElementById('cookie-ads-toggle');
+  const btnManage = document.getElementById('cookie-manage');
+  const btnReject = document.getElementById('cookie-reject');
+  const btnAccept = document.getElementById('cookie-accept');
+  const btnSave   = document.getElementById('cookie-save');
+  const settingsLink = document.getElementById('cookie-settings-link');
+  const settingsLinkFooter = document.getElementById('open-cookie-prefs-footer');
+
+  function getConsent() {
+    try { return JSON.parse(localStorage.getItem(COOKIE_KEY)); }
+    catch (e) { return null; }
+  }
+
+  function saveConsent(analytics, advertising) {
+    const record = {
+      analytics: analytics,
+      advertising: advertising,
+      essential: true,
+      timestamp: new Date().toISOString(),
+      policyVersion: 'v2'
+    };
+    try { localStorage.setItem(COOKIE_KEY, JSON.stringify(record)); } catch (e) {}
+    applyConsent(record);
+    closeBanner();
+  }
+
+  function applyConsent(record) {
+    if (!record) return;
+    window.dataLayer = window.dataLayer || [];
+    window.dataLayer.push({
+      'event': 'consent_update',
+      'analytics_storage': record.analytics ? 'granted' : 'denied',
+      'ad_storage': record.advertising ? 'granted' : 'denied',
+      'ad_user_data': record.advertising ? 'granted' : 'denied',
+      'ad_personalization': record.advertising ? 'granted' : 'denied'
+    });
+    // GTM carrega se qualquer uma das categorias não-essenciais for aceita,
+    // já que o próprio container distribui os sinais de consentimento às tags
+    // de análise (GA4) e de publicidade (Google Ads / Meta Pixel) configuradas nele.
+    if ((record.analytics || record.advertising) && typeof gtmLoad === 'function') {
+      gtmLoad();
+    }
+  }
+
+  function openBanner() {
+    overlay.classList.add('visible');
+  }
+  function closeBanner() {
+    overlay.classList.remove('visible');
+    prefsBox.classList.remove('open');
+    btnSave.style.display = 'none';
+    btnReject.style.display = '';
+    btnManage.style.display = '';
+  }
+
+  const existing = getConsent();
+  if (existing) {
+    applyConsent(existing);
+  } else {
+    openBanner();
+  }
+
+  btnManage.addEventListener('click', () => {
+    prefsBox.classList.add('open');
+    btnManage.style.display = 'none';
+    btnReject.style.display = 'none';
+    btnSave.style.display = '';
+    if (existing) {
+      toggleAn.checked = !!existing.analytics;
+      toggleAds.checked = !!existing.advertising;
+    }
+  });
+
+  btnReject.addEventListener('click', () => saveConsent(false, false));
+  btnAccept.addEventListener('click', () => saveConsent(true, true));
+  btnSave.addEventListener('click', () => saveConsent(toggleAn.checked, toggleAds.checked));
+
+  function reopenForEditing(e) {
+    e.preventDefault();
+    const current = getConsent();
+    prefsBox.classList.add('open');
+    btnManage.style.display = 'none';
+    btnReject.style.display = 'none';
+    btnSave.style.display = '';
+    if (current) {
+      toggleAn.checked = !!current.analytics;
+      toggleAds.checked = !!current.advertising;
+    }
+    openBanner();
+  }
+  settingsLink.addEventListener('click', reopenForEditing);
+  if (settingsLinkFooter) settingsLinkFooter.addEventListener('click', reopenForEditing);
+</script>
 
 </body>
-
 </html>
