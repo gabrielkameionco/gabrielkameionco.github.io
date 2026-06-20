@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Política de Privacidade — Dr. Gabriel Kamei</title>
+  <meta name="robots" content="noindex, follow" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --ink:       #0D1117;
+      --slate:     #4A5568;
+      --line:      #E2E8F0;
+      --cream:     #F8F6F2;
+      --white:     #FFFFFF;
+      --teal:      #0A7C6B;
+      --teal-dark: #065A4D;
+      --teal-pale: #E6F4F1;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      color: var(--ink);
+      background: var(--white);
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    h1, h2 { font-family: 'Playfair Display', serif; line-height: 1.2; }
+
+    .topbar {
+      background: var(--ink);
+      padding: 1rem 0;
+    }
+    .topbar .container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .topbar a {
+      color: var(--white);
+      text-decoration: none;
+      font-family: 'Playfair Display', serif;
+      font-size: 1.05rem;
+    }
+    .topbar .back {
+      color: rgba(255,255,255,0.6);
+      font-family: 'Inter', sans-serif;
+      font-size: 0.85rem;
+      text-decoration: none;
+    }
+    .topbar .back:hover { color: var(--teal); }
+
+    .container { max-width: 760px; margin: 0 auto; padding: 0 1.5rem; }
+
+    .page-header {
+      background: var(--teal-dark);
+      padding: 3.5rem 0 2.5rem;
+      color: var(--white);
+    }
+    .page-header h1 { font-size: clamp(1.8rem, 3.5vw, 2.4rem); margin-bottom: 0.6rem; }
+    .page-header p { color: rgba(255,255,255,0.65); font-size: 0.92rem; }
+
+    main { padding: 3rem 0 5rem; }
+
+    .toc {
+      background: var(--cream);
+      border-radius: 0.75rem;
+      padding: 1.5rem 1.75rem;
+      margin-bottom: 3rem;
+    }
+    .toc-title {
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--teal);
+      margin-bottom: 0.75rem;
+    }
+    .toc ol { list-style: none; counter-reset: toc; }
+    .toc li {
+      counter-increment: toc;
+      font-size: 0.9rem;
+      margin-bottom: 0.45rem;
+    }
+    .toc li::before {
+      content: counter(toc) ". ";
+      font-weight: 600;
+      color: var(--teal-dark);
+    }
+    .toc a { color: var(--ink); text-decoration: none; }
+    .toc a:hover { color: var(--teal); text-decoration: underline; }
+
+    section.policy-section {
+      margin-bottom: 2.75rem;
+      scroll-margin-top: 2rem;
+    }
+    section.policy-section h2 {
+      font-size: 1.3rem;
+      color: var(--ink);
+      margin-bottom: 1rem;
+      padding-bottom: 0.6rem;
+      border-bottom: 2px solid var(--teal-pale);
+    }
+    section.policy-section p { font-size: 0.93rem; color: var(--slate); margin-bottom: 0.9rem; }
+    section.policy-section ul { margin: 0 0 0.9rem 1.25rem; }
+    section.policy-section li { font-size: 0.93rem; color: var(--slate); margin-bottom: 0.5rem; }
+    section.policy-section strong { color: var(--ink); }
+
+    .info-box {
+      background: var(--teal-pale);
+      border-left: 3px solid var(--teal);
+      border-radius: 0.5rem;
+      padding: 1rem 1.25rem;
+      margin: 1rem 0;
+    }
+    .info-box p { color: var(--teal-dark); font-size: 0.88rem; margin: 0; }
+
+    .contact-card {
+      background: var(--ink);
+      border-radius: 0.75rem;
+      padding: 1.75rem;
+      color: var(--white);
+      margin-top: 0.5rem;
+    }
+    .contact-card h3 {
+      font-family: 'Inter', sans-serif;
+      font-size: 0.95rem;
+      font-weight: 700;
+      margin-bottom: 0.75rem;
+    }
+    .contact-card p { color: rgba(255,255,255,0.7); font-size: 0.88rem; margin-bottom: 0.4rem; }
+    .contact-card a { color: var(--teal); text-decoration: none; font-weight: 600; }
+    .contact-card a:hover { text-decoration: underline; }
+
+    table.rights-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1rem 0;
+      font-size: 0.88rem;
+    }
+    table.rights-table th, table.rights-table td {
+      text-align: left;
+      padding: 0.65rem 0.75rem;
+      border-bottom: 1px solid var(--line);
+    }
+    table.rights-table th { color: var(--ink); font-weight: 700; background: var(--cream); }
+    table.rights-table td { color: var(--slate); }
+
+    footer {
+      background: var(--ink);
+      padding: 2rem 0;
+      text-align: center;
+    }
+    footer p { color: rgba(255,255,255,0.4); font-size: 0.78rem; }
+    footer a { color: var(--teal); text-decoration: none; }
+
+    @media (max-width: 600px) {
+      .page-header { padding: 2.5rem 0 2rem; }
+      main { padding: 2rem 0 3rem; }
+    }
+  </style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="container">
+    <a href="index.html">Dr. Gabriel Kamei</a>
+    <a href="index.html" class="back">← Voltar ao site</a>
+  </div>
+</div>
+
+<div class="page-header">
+  <div class="container">
+    <h1>Política de Privacidade</h1>
+    <p>Última atualização: 20 de junho de 2026</p>
+  </div>
+</div>
+
+<main>
+  <div class="container">
+
+    <div class="toc">
+      <div class="toc-title">Nesta página</div>
+      <ol>
+        <li><a href="#quem-somos">Quem trata seus dados</a></li>
+        <li><a href="#dados-coletados">Quais dados coletamos</a></li>
+        <li><a href="#dados-sensiveis">Dados sensíveis de saúde</a></li>
+        <li><a href="#finalidade">Para que usamos seus dados</a></li>
+        <li><a href="#base-legal">Base legal do tratamento</a></li>
+        <li><a href="#cookies">Cookies e tecnologias de rastreamento</a></li>
+        <li><a href="#anuncios">Anúncios, remarketing e mídia paga</a></li>
+        <li><a href="#compartilhamento">Com quem compartilhamos seus dados</a></li>
+        <li><a href="#retencao">Por quanto tempo guardamos seus dados</a></li>
+        <li><a href="#seguranca">Como protegemos seus dados</a></li>
+        <li><a href="#direitos">Seus direitos como titular</a></li>
+        <li><a href="#encarregado">Encarregado de dados (DPO)</a></li>
+        <li><a href="#alteracoes">Alterações desta política</a></li>
+      </ol>
+    </div>
+
+    <section class="policy-section" id="quem-somos">
+      <h2>1. Quem trata seus dados</h2>
+      <p>
+        Esta Política de Privacidade se aplica ao site <strong>gabrielkameionco.github.io</strong>, mantido pelo
+        <strong>Dr. Gabriel Kamei (MÉDICO, CRM-AM 13.068)</strong>, doravante denominado "Controlador", para fins de
+        divulgação profissional e agendamento de consultas.
+      </p>
+      <p>
+        Este documento explica, de forma clara e acessível, como coletamos, usamos, armazenamos e protegemos os dados
+        pessoais de quem visita este site, em conformidade com a Lei Geral de Proteção de Dados Pessoais
+        (Lei nº 13.709/2018 — LGPD).
+      </p>
+    </section>
+
+    <section class="policy-section" id="dados-coletados">
+      <h2>2. Quais dados coletamos</h2>
+      <p>Coletamos os seguintes dados quando você interage com este site:</p>
+      <ul>
+        <li><strong>Dados fornecidos diretamente por você</strong>, ao iniciar uma conversa pelo WhatsApp: nome, número de telefone e, conforme o conteúdo da própria mensagem, informações sobre seu motivo de contato.</li>
+        <li><strong>Dados de navegação</strong>, coletados automaticamente caso você autorize cookies de análise: páginas visitadas, tempo de permanência, tipo de dispositivo e origem do acesso (por exemplo, qual anúncio ou link você utilizou para chegar até aqui).</li>
+      </ul>
+      <p>Este site não possui formulário próprio de cadastro. Os dados de contato são enviados voluntariamente por você, diretamente para o WhatsApp da equipe, fora do nosso servidor.</p>
+    </section>
+
+    <section class="policy-section" id="dados-sensiveis">
+      <h2>3. Dados sensíveis de saúde</h2>
+      <p>
+        Caso você opte por informar, na mensagem de contato, detalhes sobre um diagnóstico, condição de saúde ou
+        histórico clínico, esses dados são classificados pela LGPD como <strong>dados pessoais sensíveis</strong>
+        (Art. 5º, II), recebendo um nível de proteção reforçado.
+      </p>
+      <div class="info-box">
+        <p>
+          Você não é obrigado a informar detalhes do seu diagnóstico para agendar uma consulta. Caso prefira, pode
+          informar apenas seu nome e telefone, deixando a avaliação clínica completa para o momento da consulta.
+        </p>
+      </div>
+      <p>
+        Quando esses dados são compartilhados, são tratados com finalidade exclusivamente assistencial, sob sigilo
+        médico, e não são utilizados para qualquer finalidade comercial, publicitária ou de perfilamento.
+      </p>
+    </section>
+
+    <section class="policy-section" id="finalidade">
+      <h2>4. Para que usamos seus dados</h2>
+      <ul>
+        <li>Viabilizar o contato e o agendamento de consultas;</li>
+        <li>Responder dúvidas enviadas pelo WhatsApp ou outros canais de contato divulgados no site;</li>
+        <li>Entender, de forma agregada e estatística, como o site é utilizado, para melhorar sua navegação (somente com seu consentimento para cookies de análise);</li>
+        <li>Cumprir obrigações legais e regulatórias aplicáveis ao exercício da medicina.</li>
+      </ul>
+      <p>Não utilizamos seus dados para envio de publicidade de terceiros, venda de listas de contato, ou qualquer finalidade alheia ao atendimento médico e à comunicação direta com você.</p>
+    </section>
+
+    <section class="policy-section" id="base-legal">
+      <h2>5. Base legal do tratamento</h2>
+      <p>O tratamento de dados pessoais neste site se baseia nas seguintes hipóteses legais previstas na LGPD:</p>
+      <ul>
+        <li><strong>Consentimento</strong> (Art. 7º, I): para o uso de cookies de análise e para o envio voluntário de dados via WhatsApp;</li>
+        <li><strong>Consentimento específico e destacado</strong> (Art. 11, I): quando dados sensíveis de saúde são fornecidos por você;</li>
+        <li><strong>Execução de procedimentos preliminares relacionados a contrato</strong> (Art. 7º, V): quando os dados são usados para viabilizar o agendamento da consulta solicitada por você;</li>
+        <li><strong>Cumprimento de obrigação legal ou regulatória</strong> (Art. 7º, II): quando exigido por normas do Conselho Federal de Medicina ou legislação sanitária.</li>
+      </ul>
+    </section>
+
+    <section class="policy-section" id="cookies">
+      <h2>6. Cookies e tecnologias de rastreamento</h2>
+      <p>Este site utiliza cookies, classificados nas seguintes categorias:</p>
+      <table class="rights-table">
+        <tr><th>Categoria</th><th>Finalidade</th><th>Exige consentimento?</th></tr>
+        <tr><td>Essenciais</td><td>Funcionamento básico do site e lembrança da sua escolha de cookies</td><td>Não</td></tr>
+        <tr><td>Análise (Google Tag Manager / Analytics)</td><td>Entender de forma agregada como o site é usado, para melhorias</td><td>Sim</td></tr>
+        <tr><td>Publicidade (Google Ads / Meta Ads)</td><td>Medir resultado de campanhas e exibir anúncios deste site a quem já o visitou (remarketing)</td><td>Sim</td></tr>
+      </table>
+      <p>
+        Os cookies de análise e de publicidade só são ativados <strong>após sua autorização expressa</strong>, dada através do banner
+        de cookies exibido no primeiro acesso. Você pode revisar ou alterar sua escolha a qualquer momento clicando
+        em <strong>"Cookies"</strong>, disponível no canto inferior da tela, ou em <strong>"Preferências de cookies"</strong>,
+        no rodapé do site.
+      </p>
+      <p>Sua decisão é registrada localmente no seu navegador, junto com a data e a versão desta política vigente no momento do consentimento.</p>
+    </section>
+
+    <section class="policy-section" id="anuncios">
+      <h2>7. Anúncios, remarketing e mídia paga</h2>
+      <p>
+        Este site é divulgado por meio de campanhas de anúncios no <strong>Google Ads</strong> e no <strong>Meta Ads</strong>
+        (Facebook e Instagram). Para medir o resultado dessas campanhas e, quando autorizado, exibir nosso anúncio a quem
+        já visitou o site (remarketing), utilizamos tecnologias de rastreamento dessas plataformas, como o Google Tag Manager
+        e o Meta Pixel.
+      </p>
+      <p>Essas tecnologias podem coletar, mediante seu consentimento:</p>
+      <ul>
+        <li>Páginas visitadas e ações realizadas no site (por exemplo, clique no botão de WhatsApp);</li>
+        <li>Identificadores de navegador/dispositivo, utilizados pelo Google e pela Meta para fins de mensuração e remarketing;</li>
+        <li>Origem do acesso, como qual anúncio ou link trouxe você até o site.</li>
+      </ul>
+      <div class="info-box">
+        <p>
+          <strong>Não utilizamos nem permitimos segmentação de anúncios com base em condição de saúde, diagnóstico ou
+          qualquer dado sensível.</strong> As políticas do Google e da Meta proíbem expressamente esse tipo de segmentação,
+          e nós seguimos essa restrição: os eventos de remarketing enviados a essas plataformas são de navegação genérica
+          (por exemplo, "visitou o site" ou "clicou em agendar"), nunca informações sobre o motivo da consulta ou conteúdo
+          de mensagens trocadas pelo WhatsApp.
+        </p>
+      </div>
+      <p>
+        O Google e a Meta atuam como <strong>operadores</strong> desses dados, processando-os conforme suas próprias
+        políticas de privacidade:
+      </p>
+      <ul>
+        <li>Google: <a href="https://policies.google.com/privacy?hl=pt-BR" target="_blank" rel="noopener">policies.google.com/privacy</a></li>
+        <li>Meta: <a href="https://www.facebook.com/privacy/policy/" target="_blank" rel="noopener">facebook.com/privacy/policy</a></li>
+      </ul>
+      <p>
+        Você pode gerenciar as preferências de anúncios diretamente nessas plataformas, através das
+        <a href="https://myadcenter.google.com/" target="_blank" rel="noopener"> configurações de anúncios do Google</a>
+        e das <a href="https://www.facebook.com/adpreferences/" target="_blank" rel="noopener">preferências de anúncios da Meta</a>,
+        além de revogar o consentimento dado neste site a qualquer momento, conforme explicado na seção anterior.
+      </p>
+    </section>
+
+    <section class="policy-section" id="compartilhamento">
+      <h2>8. Com quem compartilhamos seus dados</h2>
+      <ul>
+        <li><strong>Equipe administrativa do consultório</strong>, para viabilizar o agendamento e atendimento;</li>
+        <li><strong>Google (Tag Manager, Analytics e Google Ads)</strong>, para dados de navegação e mensuração de campanhas, somente mediante seu consentimento com cookies de análise/publicidade;</li>
+        <li><strong>Meta Platforms, Inc. (Meta Ads / Pixel)</strong>, para mensuração de campanhas e remarketing, somente mediante seu consentimento com cookies de publicidade;</li>
+        <li><strong>WhatsApp (Meta Platforms, Inc.)</strong>, como canal de comunicação que você escolhe utilizar voluntariamente — o tratamento de dados dentro do aplicativo segue a política de privacidade do próprio WhatsApp.</li>
+      </ul>
+      <p>Não compartilhamos, vendemos ou alugamos seus dados pessoais a terceiros para fins de marketing ou publicidade fora do escopo descrito nesta política.</p>
+    </section>
+
+    <section class="policy-section" id="retencao">
+      <h2>9. Por quanto tempo guardamos seus dados</h2>
+      <p>
+        Dados de contato trocados via WhatsApp são mantidos pelo tempo necessário para viabilizar o atendimento e
+        cumprir obrigações legais e éticas da prática médica, podendo ser excluídos a seu pedido, salvo quando a
+        retenção for exigida por lei ou norma do CFM (como prontuários, quando aplicável).
+      </p>
+      <p>
+        Os dados de consentimento de cookies são mantidos no seu próprio navegador e podem ser apagados por você a
+        qualquer momento, limpando os dados de navegação do seu dispositivo. Os dados retidos pelo Google e pela Meta
+        seguem os períodos de retenção definidos nas políticas dessas próprias plataformas.
+      </p>
+    </section>
+
+    <section class="policy-section" id="seguranca">
+      <h2>10. Como protegemos seus dados</h2>
+      <p>
+        Adotamos medidas técnicas e organizacionais razoáveis para proteger os dados pessoais tratados em conexão
+        com este site contra acessos não autorizados, perda, alteração ou divulgação indevida, incluindo o uso de
+        conexão segura (HTTPS) e acesso restrito às informações de contato recebidas.
+      </p>
+    </section>
+
+    <section class="policy-section" id="direitos">
+      <h2>11. Seus direitos como titular de dados</h2>
+      <p>De acordo com o Art. 18 da LGPD, você tem direito a:</p>
+      <table class="rights-table">
+        <tr><th>Direito</th><th>O que significa</th></tr>
+        <tr><td>Confirmação e acesso</td><td>Saber se tratamos seus dados e quais são eles</td></tr>
+        <tr><td>Correção</td><td>Solicitar a correção de dados incompletos ou desatualizados</td></tr>
+        <tr><td>Anonimização, bloqueio ou eliminação</td><td>Solicitar que dados desnecessários ou tratados em desconformidade sejam anonimizados ou excluídos</td></tr>
+        <tr><td>Portabilidade</td><td>Solicitar a transferência de seus dados a outro fornecedor de serviço</td></tr>
+        <tr><td>Revogação do consentimento</td><td>Retirar, a qualquer momento, o consentimento dado anteriormente</td></tr>
+        <tr><td>Informação sobre compartilhamento</td><td>Saber com quais entidades seus dados foram compartilhados</td></tr>
+      </table>
+      <p>Para exercer qualquer um desses direitos, entre em contato pelo canal indicado na seção 12.</p>
+    </section>
+
+    <section class="policy-section" id="encarregado">
+      <h2>12. Encarregado de dados (DPO)</h2>
+      <p>
+        Em conformidade com o Art. 41 da LGPD, o Encarregado pelo Tratamento de Dados Pessoais (DPO) responsável por
+        este site pode ser contatado para esclarecer dúvidas, receber reclamações e processar solicitações relativas
+        ao tratamento de dados pessoais.
+      </p>
+      <div class="contact-card">
+        <h3>Canal de contato do Encarregado (DPO)</h3>
+        <p>Dr. Gabriel Kamei</p>
+        <p>E-mail: <a href="mailto:drgabrielkamei@gmail.com">drgabrielkamei@gmail.com</a></p>
+      </div>
+    </section>
+
+    <section class="policy-section" id="alteracoes">
+      <h2>13. Alterações desta política</h2>
+      <p>
+        Esta Política de Privacidade pode ser atualizada periodicamente para refletir melhorias no site ou mudanças
+        na legislação aplicável. Recomendamos a revisão ocasional desta página. Alterações relevantes serão
+        destacadas pela atualização da data no topo deste documento.
+      </p>
+    </section>
+
+  </div>
+</main>
+
+<footer>
+  <div class="container">
+    <p>Dr. Gabriel Kamei — MÉDICO · CRM-AM 13.068 · <a href="index.html">Voltar ao site</a></p>
+  </div>
+</footer>
+
+</body>
+</html>
